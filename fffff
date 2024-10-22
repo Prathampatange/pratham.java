@@ -1,0 +1,23 @@
+class fact
+{
+    int num;
+    void setdim(int n)
+    {
+        num=n;
+    }
+    int factmethod()
+    {
+        int i,fact=1;
+        for(i=1;i<=num;i++)
+        {
+            fact=fact*i;
+        }
+        return(fact);
+    }
+    public static void main(String args[])
+    {
+        fact f1 = new fact();
+        f1.setdim(5);
+        System.out.println("factorial of number="+f1.factmethod());
+    }
+}
